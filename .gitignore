@@ -1,0 +1,6 @@
+/HelloWorldService/.mvn/wrapper/*.jar
+/HelloWorldService/.mvn/wrapper/maven-wrapper.jar
+/RemoteSystemsTempFiles
+/soapui.log
+/.metadata
+/.recommenders

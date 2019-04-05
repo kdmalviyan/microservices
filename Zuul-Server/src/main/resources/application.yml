@@ -1,0 +1,21 @@
+server:
+   port: 7070
+spring:
+   application:
+      name: Zuul-Service
+eureka:
+   instance:
+      preferIpAddress: true
+   client:
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+         defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+zuul:
+   routes:
+      customer:
+         path: /customer/**
+         serviceId: Customer-Service
+      order:
+         path: /order/**
+         serviceId: Order-Service
